@@ -149,7 +149,7 @@ var age=41;
 
 
 // LOOPS in javascript
-var arr=[1,2,3,4,5,6,7];
+// var arr=[1,2,3,4,5,6,7];
 // console.log(arr);
 
 // for(var i=0;i<arr.length;i++)
@@ -176,7 +176,26 @@ const ac=0;
 
 let k=10;
 //do-while loop
-do{
-console.log(arr[k]); //k=10 is not present so undefined
-k++;
-}while(k<arr.length);
+// do{
+// console.log(arr[k]); //k=10 is not present so undefined
+// k++;
+// }while(k<arr.length);
+//----------------------------------
+
+
+
+//break and continue statement
+var arr=[1,2,3,4,5,6,7];
+// for(var i=0;i<arr.length;i++)
+// {
+//   if(i==2){
+//     break;
+//   }console.log(arr[i]);
+// } //0/p=1 2
+
+// for(var i=0;i<arr.length;i++)
+// {
+//   if(i==2){
+//     continue;
+//   }console.log(arr[i]);
+// } //o/p= 1 2 4 5 6 7
