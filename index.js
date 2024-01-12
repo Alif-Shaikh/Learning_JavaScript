@@ -211,11 +211,24 @@ let myArr=["Fan","Camera",34,null,true]; //length=5
 // myArr.push("Alif");//pushed at the end
 // myArr.shift(); //shifts/removes 1st ele
 // console.log(myArr.length); //4
-const newLen=myArr.unshift("Alif");  //Alif is unshifted at 1st
-console.log(newLen);
-console.log(myArr);
-console.log(myArr.toString()); //string representation
-let arr1=[3,11,7,4,22]; //sorts num by alphabetically by first converting it into string
-arr1.sort();
-console.log(arr1);
+// const newLen=myArr.unshift("Alif");  //Alif is unshifted at 1st
+// console.log(newLen);
+// console.log(myArr);
+// console.log(myArr.toString()); //string representation
+// let arr1=[3,11,7,4,22]; //11 22 3 4 7 //sorts num by alphabetically by first converting it into string
+// arr1.sort();
+// console.log(arr1);
+//-----------------------------------------------
 
+
+//String Methods in javascript
+let str="Amit is a teacher is is";
+// console.log(str.length); //23
+// console.log(str.indexOf("is")); //5 by default gives index of 1st occurance
+// console.log(str.lastIndexOf("is"));//21
+
+// console.log(str.slice(0,3)); //Ami
+// console.log(str.slice(3,7));  //t is
+newStr=str.replace("Amit","Rohan"); //replaces first occurance only
+newStr=newStr.replace("teacher","Scientist");
+console.log(newStr, str);
