@@ -199,3 +199,23 @@ var arr=[1,2,3,4,5,6,7];
 //     continue;
 //   }console.log(arr[i]);
 // } //o/p= 1 2 4 5 6 7
+//------------------------------------------------
+
+
+
+//Array  Methods
+let myArr=["Fan","Camera",34,null,true]; //length=5
+
+// myArr.pop();
+// console.log(myArr.length); //after pop length will be 4(last ele is popped)
+// myArr.push("Alif");//pushed at the end
+// myArr.shift(); //shifts/removes 1st ele
+// console.log(myArr.length); //4
+const newLen=myArr.unshift("Alif");  //Alif is unshifted at 1st
+console.log(newLen);
+console.log(myArr);
+console.log(myArr.toString()); //string representation
+let arr1=[3,11,7,4,22]; //sorts num by alphabetically by first converting it into string
+arr1.sort();
+console.log(arr1);
+
