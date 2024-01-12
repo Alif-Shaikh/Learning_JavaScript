@@ -229,6 +229,19 @@ let str="Amit is a teacher is is";
 
 // console.log(str.slice(0,3)); //Ami
 // console.log(str.slice(3,7));  //t is
-newStr=str.replace("Amit","Rohan"); //replaces first occurance only
-newStr=newStr.replace("teacher","Scientist");
-console.log(newStr, str);
+// newStr=str.replace("Amit","Rohan"); //replaces first occurance only
+// newStr=newStr.replace("teacher","Scientist");
+// console.log(newStr, str);
+//-------------------------------------------------
+
+
+//DATES in javascript
+let myDate = new Date(); //to create new date
+console.log(myDate);
+console.log(myDate.getTime());//in seconds
+console.log(myDate.getFullYear());//2024
+console.log(myDate.getDay());//Today is fri so its 5th day //o/p=>5
+console.log(myDate.getMinutes());
+console.log(myDate.getHours());
+--------------------------------------------------
+
