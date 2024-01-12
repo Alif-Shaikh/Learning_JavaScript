@@ -62,6 +62,7 @@ var n=null;
 
 // var arr=[1,2,"alif",4,5];
 // console.log(arr); 
+//--------------------------------------------------
 
 
 //Opeartors in JS
@@ -108,6 +109,8 @@ var y=56;
 // logical not
 // console.log(!true);
 // console.log(!false);
+//--------------------------------------------------
+
 
 
 //FUNCTIONS in JS
@@ -118,6 +121,7 @@ function avg(a,b){
 c1=avg(4,6);
 c2=avg(14,16); 
 // console.log(c1,c2);
+//-------------------------------------------------
 
 
 //CONDITIONALS in JS
@@ -134,9 +138,45 @@ var age=41;
 // console.log("You are a kid");
 
 //if-else ladder
-if(age>0 && age<18)
-console.log("You are a child");
-else if(age>=13 && age<18)
-console.log("You are a teen");
-else
-console.log("You are adult");
+// if(age>0 && age<18)
+// console.log("You are a child");
+// else if(age>=13 && age<18)
+// console.log("You are a teen");
+// else
+// console.log("You are adult");
+//--------------------------------------------------
+
+
+
+// LOOPS in javascript
+var arr=[1,2,3,4,5,6,7];
+// console.log(arr);
+
+// for(var i=0;i<arr.length;i++)
+// {
+//   console.log(arr[i]);
+// }
+
+// arr.forEach(function(element){
+//   console.log(element);
+// })
+
+
+//while-loop
+let j=0 //block level scope
+//variable declared with let will not be available after the fun
+const ac=0;
+// ac=ac+1;   ...not allowed
+
+// while(j<arr.length)
+// {
+//   console.log(arr[j]);
+//   j++; 
+// }
+
+let k=10;
+//do-while loop
+do{
+console.log(arr[k]); //k=10 is not present so undefined
+k++;
+}while(k<arr.length);
