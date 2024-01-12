@@ -236,12 +236,48 @@ let str="Amit is a teacher is is";
 
 
 //DATES in javascript
-let myDate = new Date(); //to create new date
-console.log(myDate);
-console.log(myDate.getTime());//in seconds
-console.log(myDate.getFullYear());//2024
-console.log(myDate.getDay());//Today is fri so its 5th day //o/p=>5
-console.log(myDate.getMinutes());
-console.log(myDate.getHours());
---------------------------------------------------
+// let myDate = new Date(); //to create new date
+// console.log(myDate);
+// console.log(myDate.getTime());//in seconds
+// console.log(myDate.getFullYear());//2024
+// console.log(myDate.getDay());//Today is fri so its 5th day //o/p=>5
+// console.log(myDate.getMinutes());
+// console.log(myDate.getHours());
+//--------------------------------------------------
+//DOM(Document Object Model) Manipulation
+let elem=document.getElementById('click');
+// console.log(elem);
 
+let elemClass=document.getElementsByClassName('container');
+//console.log(elemClass);
+//  elemClass[0].style.background="yellow";
+elemClass[0].classList.add("bg-primary");
+elemClass[0].classList.add("text-success");
+elemClass[0].classList.remove("text-success");
+// elemClass[0].innerHTML; ...gives HTML code inside that particular element
+// elemClass[0].innerText; ...gives text inside that particular element
+// console.log(elem.innerHTML);
+// console.log(elem.innerText);
+// console.log(elemClass[0].innerHTML);
+// console.log(elemClass[0].innerText);
+
+tn=document.getElementsByTagName('button');
+console.log(tn);
+tnd=document.getElementsByTagName('div');
+console.log(tnd);
+
+createdElement=document.createElement('P');
+createdElement.innerText="This is a created para";
+tnd[0].appendChild(createdElement); //tnd[0] is a first div
+
+createdElement2=document.createElement('b');
+createdElement2.innerText="This is a created bold";
+tnd[0].replaceChild(createdElement2, createdElement); //tnd[0] is a first div
+
+//tnd[0].removeChild(createdElement2); removes 'b' element
+
+//Selecting using query
+sel = document.querySelector('.container')
+console.log(sel);
+sel = document.querySelectorAll('.container')
+console.log(sel);
