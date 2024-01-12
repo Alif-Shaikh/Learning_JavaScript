@@ -106,5 +106,37 @@ var y=56;
 // console.log(false || false);
 
 // logical not
-console.log(!true);
-console.log(!false);
+// console.log(!true);
+// console.log(!false);
+
+
+//FUNCTIONS in JS
+//DRY=> Do not repeat yourself
+function avg(a,b){
+  return(a+b)/2;
+}
+c1=avg(4,6);
+c2=avg(14,16); 
+// console.log(c1,c2);
+
+
+//CONDITIONALS in JS
+var age=41;
+
+//single if statement
+// if(age>8)
+// console.log("You are not a kid");
+
+//if-else statement
+// if(age>8)
+// console.log("You are not a kid");
+// else
+// console.log("You are a kid");
+
+//if-else ladder
+if(age>0 && age<18)
+console.log("You are a child");
+else if(age>=13 && age<18)
+console.log("You are a teen");
+else
+console.log("You are adult");
