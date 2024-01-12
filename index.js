@@ -54,3 +54,10 @@
 //Null
 var n=null;
 console.log(n);
+
+//at avery high level there are two types data types in JS
+// 1.Primitive: number, string, boolean, undefined,null, Symbol
+
+// 2.Reference:Arrays and Objects
+
+var arr=[1,2,"alif",4,5];
