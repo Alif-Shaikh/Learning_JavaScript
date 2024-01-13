@@ -262,32 +262,32 @@ elemClass[0].classList.remove("text-success");
 // console.log(elemClass[0].innerHTML);
 // console.log(elemClass[0].innerText);
 
-tn=document.getElementsByTagName('button');
-console.log(tn);
-tnd=document.getElementsByTagName('div');
-console.log(tnd);
+// tn=document.getElementsByTagName('button');
+// console.log(tn);
+// tnd=document.getElementsByTagName('div');
+// console.log(tnd);
 
-createdElement=document.createElement('P');
-createdElement.innerText="This is a created para";
-tnd[0].appendChild(createdElement); //tnd[0] is a first div
+// createdElement=document.createElement('P');
+// createdElement.innerText="This is a created para";
+// tnd[0].appendChild(createdElement); //tnd[0] is a first div
 
-createdElement2=document.createElement('b');
-createdElement2.innerText="This is a created bold";
-tnd[0].replaceChild(createdElement2, createdElement); //tnd[0] is a first div
+// createdElement2=document.createElement('b');
+// createdElement2.innerText="This is a created bold";
+// tnd[0].replaceChild(createdElement2, createdElement); //tnd[0] is a first div
 
 //tnd[0].removeChild(createdElement2); removes 'b' element
 
 //Selecting using query
-sel = document.querySelector('.container')
-console.log(sel);
-sel = document.querySelectorAll('.container')
-console.log(sel);
+// sel = document.querySelector('.container')
+// console.log(sel);
+// sel = document.querySelectorAll('.container')
+// console.log(sel);
 
 // function clicked(){
 //   console.log('The button was clicked');
 // }
 window.onload=function(){
-  console.log('The document was loaded'); //defines things to do when page is loaded
+  // console.log('The document was loaded'); //defines things to do when page is loaded
 }
 //-----------------------------------------------
 
@@ -306,13 +306,41 @@ window.onload=function(){
 //   console.log("mouse out of container");
 // })
 
-let preHTML=document.querySelectorAll('.container')[1].innerHTML
-firstContainer.addEventListener('mouseup',function(){
-  document.querySelectorAll('.container')[1].innerHTML =preHTML;
-  console.log("mouse up when clicked on container");
-})
+// let preHTML=document.querySelectorAll('.container')[1].innerHTML
+// firstContainer.addEventListener('mouseup',function(){
+//   document.querySelectorAll('.container')[1].innerHTML =preHTML;  
+//   console.log("mouse up when clicked on container");
+// })
 
-firstContainer.addEventListener('mousedown',function(){
-  document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked </b>"
-  console.log("mouse down when clicked on container");
-})
+// firstContainer.addEventListener('mousedown',function(){
+//   document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked </b>"
+//   console.log("mouse down when clicked on container");
+// })
+//------------------------------------------------
+
+
+//Arrow Functions
+// function summ(a,b){
+//   return a+b;
+// }
+summ=(a,b)=>{
+  return a+b;
+}
+
+
+// setTimeout and setInterval
+
+logIn =()=>{
+  document.querySelectorAll('.container')[1].innerHTML = "<b> Set interval fired... </b>"
+  console.log("I am your log");
+}
+// setTimeout(logIn,2000);
+// here log is function and 2000 is time in millisecond
+// clr1=setTimeout(logIn,3000)
+// clearTimeout(clr1);
+//clearTimeout is used to stop
+
+// setInterval(logIn,2000);
+clr2=setInterval(logIn,2000); //to repeat function 
+clearInterval(clr2);
+//clearInterval is used to stop
