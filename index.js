@@ -245,6 +245,7 @@ let str="Amit is a teacher is is";
 // console.log(myDate.getHours());
 //--------------------------------------------------
 //DOM(Document Object Model) Manipulation
+//def=> "The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
 let elem=document.getElementById('click');
 // console.log(elem);
 
@@ -281,3 +282,37 @@ sel = document.querySelector('.container')
 console.log(sel);
 sel = document.querySelectorAll('.container')
 console.log(sel);
+
+// function clicked(){
+//   console.log('The button was clicked');
+// }
+window.onload=function(){
+  console.log('The document was loaded'); //defines things to do when page is loaded
+}
+//-----------------------------------------------
+
+//EVENTS in javascript
+  
+// firstContainer.addEventListener('click',function(){
+//   document.querySelectorAll('.container')[1].innerHTML="<b>We have clicked";
+//   console.log("Clicked on Container");
+// })
+
+// firstContainer.addEventListener('mouseover',function(){
+//   console.log("mouse on container");
+// })
+
+// firstContainer.addEventListener('mouseout',function(){
+//   console.log("mouse out of container");
+// })
+
+let preHTML=document.querySelectorAll('.container')[1].innerHTML
+firstContainer.addEventListener('mouseup',function(){
+  document.querySelectorAll('.container')[1].innerHTML =preHTML;
+  console.log("mouse up when clicked on container");
+})
+
+firstContainer.addEventListener('mousedown',function(){
+  document.querySelectorAll('.container')[1].innerHTML = "<b> We have clicked </b>"
+  console.log("mouse down when clicked on container");
+})
