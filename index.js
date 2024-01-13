@@ -175,6 +175,7 @@ const ac=0;
 // }
 
 let k=10;
+let m=5;
 //do-while loop
 // do{
 // console.log(arr[k]); //k=10 is not present so undefined
@@ -353,6 +354,7 @@ clearInterval(clr2);
 //localStorage O/p=> Storage {Name: 'Alif', Course: 'DAC', length: 2}
 //localStorage.clear();//clears the storage
 // localStorage.getItem('name');
+// localStorage.getItem('itemsjson');   //null if not present
 //localStorage.remove('name');
 
 
