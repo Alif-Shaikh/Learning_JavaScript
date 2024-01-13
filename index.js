@@ -344,3 +344,33 @@ logIn =()=>{
 clr2=setInterval(logIn,2000); //to repeat function 
 clearInterval(clr2);
 //clearInterval is used to stop
+//------------------------------------------------
+
+//LOCAL STORAGE IN JAVASCRIPT
+// localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored persists even after the user closes the browser or restarts the computer.//
+// localStorage.setItem('Name','Alif');
+// localStorage.setItem('Course','DAC');
+//localStorage O/p=> Storage {Name: 'Alif', Course: 'DAC', length: 2}
+//localStorage.clear();//clears the storage
+// localStorage.getItem('name');
+//localStorage.remove('name');
+
+
+
+// JSON(JavaScript Object Notation)
+// JavaScript Object Notation (JSON) is a standard text-based format for representing structured data. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).
+
+obj={name:"Alif",length:1,a:{this:'tha"t'}};
+//javascript object supports single quotes but JSON does not
+console.log(obj);
+//typeof() fun is used to find the type of variable
+//typeof obj is Object
+jso=JSON.stringify(obj); //we can easily transport string across
+//typeof jso is String
+console.log(typeof(jso));
+console.log(jso);
+
+parsed=JSON.parse(`{"name":"Alif","length":1,"a":{"this":"tha\\"t"}}`);
+console.log(parsed);
+parsed=JSON.parse( jso);
+console.log(parsed);
