@@ -360,17 +360,18 @@ clearInterval(clr2);
 // JSON(JavaScript Object Notation)
 // JavaScript Object Notation (JSON) is a standard text-based format for representing structured data. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).
 
-obj={name:"Alif",length:1,a:{this:'tha"t'}};
+// obj={name:"Alif",length:1,a:{this:'tha"t'}};
 //javascript object supports single quotes but JSON does not
-console.log(obj);
+// console.log(obj);
 //typeof() fun is used to find the type of variable
 //typeof obj is Object
-jso=JSON.stringify(obj); //we can easily transport string across
+// jso=JSON.stringify(obj); //we can easily transport string across
 //typeof jso is String
-console.log(typeof(jso));
-console.log(jso);
+// --------------------------------------------  
 
-parsed=JSON.parse(`{"name":"Alif","length":1,"a":{"this":"tha\\"t"}}`);
-console.log(parsed);
-parsed=JSON.parse( jso);
-console.log(parsed);
+
+// VERSIONS in javascript
+//ECMA script is a standard by which js is maintained
+//Template Lirerals- Backticks
+a=34;
+console.log(`This is my ${a}`);//34
