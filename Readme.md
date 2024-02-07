@@ -1,3 +1,5 @@
+#JavaScript
+
 1. Ways to print in Javascript
 2. Javascript console apis
 3. Javascript variables
