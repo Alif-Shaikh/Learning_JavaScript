@@ -65,7 +65,7 @@ var n=null;
 //--------------------------------------------------
 
 
-//Opeartors in JS
+//Operators in JS
 //Arithmetic operators
 var a=34;
 var b=56;
