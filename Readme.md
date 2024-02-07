@@ -1,4 +1,4 @@
-1. ways to print in Javascript
+1. Ways to print in Javascript
 2. Javascript console apis
 3. Javascript variables
 4. Operators in JS
